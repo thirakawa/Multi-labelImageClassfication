@@ -1,0 +1,16 @@
+
+### General
+__pycahce__
+*.pyc
+
+
+### Dataset
+data/celeba
+data/MSCOCO
+data/VOCdevkit
+data/NUS-WIDE
+data/VISPR
+data/WIDER
+data/VAW
+
+
