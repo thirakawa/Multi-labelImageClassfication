@@ -1,7 +1,9 @@
 
 ### General
-__pycahce__
+__pycahce__/
 *.pyc
+.hypothesis/
+.vscode/
 
 
 ### Dataset

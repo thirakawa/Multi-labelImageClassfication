@@ -1,7 +1,7 @@
 # Multi-label Image Classification with MS-COCO
 
 
-## Twoway Multi-label Loss Default Profile
+## Default Profile
 
 Here is defalut profile of Variational Information Bottleneck (Hirakawa+, 2024), which is based on the default profile of Twoway Multi-label Loss proposed by Kobayashi, CVPR 2023.
 

@@ -85,12 +85,54 @@ MultiLabelImageClassification/data/
 
 ## Pascal VOC (2007/2012) Dataset
 
-TBA
+### Download dataset
+
+First, you need to download [VOC 2007](http://host.robots.ox.ac.uk/pascal/VOC/voc2007/) and [VOC 2012](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/).
+
+### Dataset organization
+
+```
+MultiLabelImageClassification/data/
+    |- VOCdevkit/
+        |- VOC2007/
+            |- Annotations/
+            |- ImageSets/
+            |- JPEGImages/
+            |- SegmentationClass/
+            |- SegmentationObject/
+        |- VOC2012/
+            |- Annotations/
+            |- ImageSets/
+            |- JPEGImages/
+            |- SegmentationClass/
+            |- SegmentationObject/
+```
 
 
 ## NUS-WIDE
 
-TBA
+First, you need to download [NUS-WIDE]().
+
+### Dataset organization
+
+```
+MultiLabelImageClassification/data/
+    |- VOCdevkit/
+        |- VOC2007/
+            |- Annotations/
+            |- ImageSets/
+            |- JPEGImages/
+            |- SegmentationClass/
+            |- SegmentationObject/
+        |- VOC2012/
+            |- Annotations/
+            |- ImageSets/
+            |- JPEGImages/
+            |- SegmentationClass/
+            |- SegmentationObject/
+```
+
+
 
 
 ## VISPR Dataset
@@ -106,21 +148,6 @@ TODO: Download dataset
 ## WIDER Dataset
 
 TBA
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
