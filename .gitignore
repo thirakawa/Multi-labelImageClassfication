@@ -4,7 +4,8 @@ __pycahce__/
 *.pyc
 .hypothesis/
 .vscode/
-
+*.npy
+*.pickle
 
 ### Dataset
 data/celeba
@@ -16,3 +17,8 @@ data/WIDER
 data/VAW
 
 
+### Runs Directory
+runs_*/
+
+### Notebook Directory
+notebook/
