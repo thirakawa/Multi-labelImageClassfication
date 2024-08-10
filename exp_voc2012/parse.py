@@ -5,8 +5,8 @@
 import random
 from argparse import ArgumentParser
 
-from multilabel.models import MODEL_NAMES
-from multilabel.loss import LOSS_NAMES
+from models import MODEL_NAMES
+from losses import LOSS_NAMES
 
 
 def argument_parser():

@@ -21,11 +21,11 @@ def argument_parser():
 
     ### loss settings
     _arg_parser.add_argument('--loss', type=str, default='bce', choices=LOSS_NAMES, help='loss function')
-    _arg_parser.add_argument('--fl_alpha', type=float, default=-1.0, help='alpha of focal loss')
-    _arg_parser.add_argument('--fl_gamma', type=float, default=2.0, help='gamma of focal loss')
-    _arg_parser.add_argument('--asl_gamma_neg', type=float, default=4.0, help='negative gamma of asymmetric loss')
-    _arg_parser.add_argument('--asl_gamma_pos', type=float, default=0.0, help='positive gamma of asymmetric loss')
-    _arg_parser.add_argument('--asl_clip', type=float, default=0.05, help='clip value of asymmetric loss')
+    _arg_parser.add_argument('--fl_alpha', type=float, default=-1, help='alpha of focal loss')
+    _arg_parser.add_argument('--fl_gamma', type=float, default=2, help='gamma of focal loss')
+    _arg_parser.add_argument('--asl_gamma_neg', type=float, default=4, help='negative gamma of asymmetric loss')
+    _arg_parser.add_argument('--asl_gamma_pos', type=float, default=1, help='positive gamma of asymmetric loss')
+    _arg_parser.add_argument('--asl_clip', type=float, default=1, help='clip value of asymmetric loss')
     _arg_parser.add_argument('--tml_t_pos', type=float, default=4.0, help='t_positive of two-way multi-label loss')
     _arg_parser.add_argument('--tml_t_neg', type=float, default=1.0, help='t_negaive of two-way multi-label loss')
 
@@ -34,10 +34,10 @@ def argument_parser():
 
     ### traininig settings
     _arg_parser.add_argument('--logdir', type=str, required=True, help='directory for storing train log and checkpoints')
-    _arg_parser.add_argument('--batch_size', type=int, default=512, help='mini-batch size')
-    _arg_parser.add_argument('--epochs', type=int, default=40, help='the number of training epochs')
+    _arg_parser.add_argument('--batch_size', type=int, default=32, help='mini-batch size')
+    _arg_parser.add_argument('--epochs', type=int, default=100, help='the number of training epochs')
     _arg_parser.add_argument('--lr', type=float, default=0.01, help='initial learning rate')
-    _arg_parser.add_argument('--b_lr', type=float, default=0.1, help='learning rate for backbone layers')
+    _arg_parser.add_argument('--lr_steps', type=int, nargs='+', default=[10000], help='epochs to decrease learning rate')
     _arg_parser.add_argument('--momentum', type=float, default=0.9, help='momentum of SGD optimizer')
     _arg_parser.add_argument('--wd', type=float, default=1e-4, help='weight decay of SGD optimizer')
     _arg_parser.add_argument('--use_nesterov', action='store_true', help='use nesterov accelerated SGD')
