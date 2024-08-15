@@ -117,22 +117,25 @@ First, you need to download [NUS-WIDE]().
 
 ```
 MultiLabelImageClassification/data/
-    |- VOCdevkit/
-        |- VOC2007/
-            |- Annotations/
-            |- ImageSets/
-            |- JPEGImages/
-            |- SegmentationClass/
-            |- SegmentationObject/
-        |- VOC2012/
-            |- Annotations/
-            |- ImageSets/
-            |- JPEGImages/
-            |- SegmentationClass/
-            |- SegmentationObject/
+    |- NUS-WIDE/
+        |- Docs/
+            |- ...
+        |- Groundtruth/
+            |- AllLabels/
+                |- ...
+            |- TrainTestLabels/
+                |- ...
+        |- ImageList/
+            |- Imagelist.txt
+            |- TestImagelist.txt
+            |- TrainImagelist.txt
+        |- Images/
+            |- actor/
+            |- administrative_assistant/
+            |- ...
+        |- ImagesUnknown/
+            |- ...
 ```
-
-
 
 
 ## VISPR Dataset
